@@ -9,8 +9,9 @@
 <%
    request.setCharacterEncoding("euc-kr");
 %>
+MemberBean bean=new MemberBean();
 <jsp:useBean id="bean" class="sist.bean.MemberBean" scope="page"/>
-<jsp:setProperty property="*" name="bean"/>
+<%-- <jsp:setProperty property="*" name="bean"/> --%>
 <body>
  
 <%=bean%>

@@ -9,9 +9,7 @@
 <body>
   <%
       String name=request.getParameter("name");
-      String age=request.getParameter("age");
       out.print(name);
-      out.print(age);
       RequestDispatcher rd= request.getRequestDispatcher("form3.jsp");
       rd.forward(request, response);
   %>

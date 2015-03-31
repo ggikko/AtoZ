@@ -9,11 +9,9 @@
 <body>
   <%
       String name=request.getParameter("name");
-      String age=request.getParameter("age");
   %>
   FOR3NAME:<%=name%>
 
-  FOR3age:<%=age%>
 
 </body>
 </html>

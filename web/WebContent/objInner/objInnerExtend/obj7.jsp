@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR" buffer="none" %>
+    pageEncoding="EUC-KR"  %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,8 +9,9 @@
 <body>
     <%
        String value=request.getParameter("value");
-       RequestDispatcher rd=pageContext.getRequest().getRequestDispatcher("obj8.jsp");
-       rd.forward(request, response);
+        RequestDispatcher rd=pageContext.getRequest().getRequestDispatcher("obj8.jsp");
+       rd.forward(request, response); 
+       //response.sendRedirect("obj8.jsp");
     %>
 
 </body>

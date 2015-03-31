@@ -12,7 +12,7 @@
     MemberBean bean=new MemberBean();
     bean.setName(request.getParameter("name"));
     bean.setAge(Integer.parseInt(request.getParameter("age")));
-    bean.setEmail(request.getParameter("email"));
+    bean.setEamil(request.getParameter("eamil"));
     session.setAttribute("star", bean);
     response.sendRedirect("form6.jsp");
  %>

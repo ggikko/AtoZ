@@ -11,6 +11,7 @@ public class ServiceUtil {
 	public static Connection getConnection() {
 		try {
 			Context initContext = new InitialContext();
+			//namming(Resource¸¦)
 			Context envContext = (Context) initContext.lookup("java:/comp/env");
 			DataSource ds = (DataSource) envContext.lookup("jdbc/oracle");
 			conn = ds.getConnection();

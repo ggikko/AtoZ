@@ -6,7 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
 <script type="text/javascript">
-
    function sendFun(){
 	  /*  document.frm.name.value='java';
 	   document.frm.age.value='java';
@@ -27,10 +26,11 @@
 </script>
 </head>
 <body>
-    <form action="form5.jsp" method="post" name="frm">
+    <form action="form5.jsp" method="get" name="frm">
        <input type="text" name="name"><br>
        <input type="text" name="age"><br>
-       <input type="text" name="email"><br>
+       <input type="text" name="eamil"><br>
+       
        <input type="button" value="Send" onclick="sendFun()">      
     </form>
 
